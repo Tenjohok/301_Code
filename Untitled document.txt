@@ -1,0 +1,27 @@
+﻿Readings: Network Segmentation
+Below you will find reading material and additional resources that support today’s topic and the upcoming lecture.
+Review the Submission Instructions for guidance on completing and submitting this assignment.
+Reading
+CIDR Block Notation Explained in 2 Minutes
+Links to an external site.
+1. What is CIDR notation? a CIDR block?
+-An CIDR notation is a representation of CIDR block.  A CIDR block represents Ip address ranges
+1. How many octets are found in an IPv4 address?
+- 4 octets
+1. Setting binary aside and using the decimal system, what is the range of numbers found in an octet
+-bytes
+ 
+1. What does the final digit after the “/” represent in an IPv4 address?
+Represent subnet mask( bits in a mask)
+1. How many IP addresses are in the CIDR block 10.0.0.0/24?
+-65,536
+What Is Network Segmentation and Why It Matters?
+Links to an external site.
+1. In your own words, describe network segmentation. 
+-It is the division of a network into multiple networks using switches, bridges and routers . All this is to isolate a network and prevent widespread cyber attack, Also to improve performance
+1. Network segmentation isn’t important as long as the network is using a well configured firewall. Do you agree? Why or why not?
+No, Firewalls do not provide full security of a network
+1. What is a screened subnet?
+-It is the distinction of LAN from external network
+1. Cameras, ID card scanners, locked doors and biometrics are just a few examples of what type of security?
+Physical security
