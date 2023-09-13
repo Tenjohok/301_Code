@@ -1,0 +1,49 @@
+#!/bin/python3
+# Script Name:                 Python scrip
+# Author:                       Akah 
+# Date of latest revision:      09/12/2023
+# Purpose:                    Create a Python script that performs the following:   
+ 
+# reference                               chatgpt 
+# import requests
+
+def make_request(url, method):
+  """Makes a request against the specified URL and method."""
+
+  response = requests.request(method, url)
+
+  # Print the response header information.
+  print(response.headers)
+
+  # Translate the status code into plain terms.
+  if response.status_code == 200:
+    print("Success")
+  elif response.status_code == 404:
+    print("Not Found")
+  elif response.status_code == 403:
+    print("Forbidden")
+  else:
+    print("Error")
+
+
+def main():
+  # Prompt the user for the URL.
+  url = input("Enter the URL: ")
+
+  # Prompt the user for the HTTP method.
+  method = input("Enter the HTTP method: ")
+
+  # Print the request to the screen.
+  print("The request I am about to send is:")
+  print(f"{method} {url}")
+
+  # Ask the user to confirm before proceeding.
+  confirm = input("Do you want to proceed? (y/n) ")
+
+  if confirm == "y":
+    # Make the request.
+    make_request(url, method)
+
+
+if __name__ == "__main__":
+  main()
