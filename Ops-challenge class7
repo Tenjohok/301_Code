@@ -1,0 +1,28 @@
+#!/usr/bin/env python3
+
+# Import libraries
+import os
+
+# Declaration of variables
+
+# Read user input here into a variable
+user_path = input("Enter a directory path: ")
+
+# Declaration of functions
+def list_files_and_directories(directory_path):
+    # Use os.walk() to generate directory tree
+    for (root, dirs, files) in os.walk(directory_path):
+        # Print the current directory
+        print("Directory:", root)
+
+        # Print subdirectories
+        print("Subdirectories:", dirs)
+
+        # Print files
+        print("Files:", files)
+
+# Main
+# Pass the user-provided variable into the function here
+list_files_and_directories(user_path)
+
+# End
