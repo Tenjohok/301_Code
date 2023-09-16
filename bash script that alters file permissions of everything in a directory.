@@ -1,0 +1,18 @@
+#!/bin/bash
+
+# Prompt the user for the input directory path
+echo "Enter the path to the directory you want to change permissions for:"
+read directory
+
+# Prompt the user for the input permissions number
+echo "Enter the permissions number you want to set (e.g. 777 to perform a chmod 777):"
+read permissions
+
+# Navigate to the input directory
+cd $directory
+
+# Change all files in the directory to the input permissions
+chmod -R $permissions *
+
+# Print the directory contents and the new permissions settings of everything in the directory
+ls -l
