@@ -1,0 +1,11 @@
+import os
+
+# Declare and reference variables
+username = os.getlogin()
+ip_address = os.popen("ip a | grep 'inet addr:' | awk '{print $2}' | head -n 1").read().strip()
+hardware_info = os.popen("lshw -short").read().strip()
+
+# Print the username, IP address, and hardware information
+print(f"Username: {username}")
+print(f"IP Address: {ip_address}")
+print(hardware_info)
